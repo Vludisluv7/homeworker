@@ -73,7 +73,7 @@ class Market implements QueueBehaviour, MarketBehavior {
     public void update() {
         if (hasOrder()) {
             Order order = takeOrder();
-            System.out.println("Заказ обработан: " + order.toString);
+            System.out.println("Заказ обработан: " + order.toString());
         } else {
             System.out.println("Заказов нету");
         }
